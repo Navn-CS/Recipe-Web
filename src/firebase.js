@@ -4,13 +4,13 @@ import { getFirestore } from 'firebase/firestore'; // Import Firestore
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAouPuK2zXl3g8JyBVaK2ERlPvN3sB0Qes",
-  authDomain: "recipe-web-b114b.firebaseapp.com",
-  projectId: "recipe-web-b114b",
-  storageBucket: "recipe-web-b114b.appspot.com",
-  messagingSenderId: "826539763386",
-  appId: "1:826539763386:web:f8ead4a1536b3fd3f00483",
-  measurementId: "G-E9QSTL5SSG"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
+  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID,
 };
 
 // Initialize Firebase
