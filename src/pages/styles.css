@@ -1,0 +1,103 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+h2, h3, h4 {
+  color: #333;
+}
+
+/* Home Page Styles */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.content {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.main-image {
+  width: 50%; /* Adjust size as needed */
+  margin-right: 20px; /* Spacing between image and description */
+}
+
+.description {
+  width: 50%; /* Adjust size as needed */
+  display: flex; /* Enable flexbox for centering */
+  flex-direction: column; /* Column direction */
+  justify-content: center; /* Center vertically */
+  text-align: justify; /* Justify text */
+}
+
+.recommendations {
+  margin-top: 40px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between; /* Ensure cards are evenly spaced */
+  flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+}
+
+.card img {
+  width: 100%; /* Make the image fill the width of its container */
+  height: 200px; /* Set a fixed height */
+  object-fit: cover; /* Maintain aspect ratio and fill the container */
+}
+
+/* Optional: Adjust the card to keep all cards the same height */
+.card {
+  min-height: 400px; /* Set a minimum height to align all cards */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-content {
+  padding: 10px;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #f8f9fa; /* Lighter background for better contrast */
+}
+
+.navbar .nav-link {
+  color: #333; /* Darker text for better readability */
+  font-weight: 600; /* Slightly bolder text */
+  transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+.navbar .nav-link:hover {
+  color: #007bff; /* Bootstrap primary color on hover */
+}
+
+.navbar .navbar-toggler {
+  border-color: #007bff; /* Change the toggler button color */
+}
+
+.navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' fill='%23007bff'%3E%3Cpath stroke='none' d='M0 3h30v3H0zm0 11h30v3H0zm0 11h30v3H0z'/%3E%3C/svg%3E");
+}
+
+.shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1) !important; /* Light shadow for depth */
+}
+
+/* Recipe Details */
+.recipe-details img {
+  width: 300px; /* Set a fixed width for the image */
+  height: 300px; /* Set a fixed height for the image */
+  object-fit: cover; /* Ensure the image covers the container while maintaining aspect ratio */
+  display: block; /* Make the image a block-level element */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+/* Add any additional common styles below */
