@@ -5,8 +5,9 @@ import About from './pages/About.js';
 import Recipe from './pages/Recipe.js';
 import RecipeDetail from './pages/RecipeDetail.js'; // Import the new component
 import Contact from './pages/Contact.js';
+import MakeYourRecipe from './pages/MakeYourRecipe.js';
 import Navbar from './components/Navbar.js'; 
-import { db } from './firebase.js';
+
 function App() {
   return (
     <Router>
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/recipe" element={<Recipe />} />
+          <Route path="/makeyourrecipe" element={<MakeYourRecipe />} />
           <Route path="/recipe/:id" element={<RecipeDetail />} /> {/* New route for recipe detail */}
           <Route path="/contact" element={<Contact />} />
         </Routes>
